@@ -17,16 +17,27 @@
         <details>
             <summary>График</summary>
             <fieldset>
+                <!--DO: добавить id к каждому пункту-->
                 <legend><b>Значение по оси OX</b></legend>
-                <label><input type="radio" name="axis_ox">Страна</label><br>
-                <label><input type="radio" name="axis_ox"> Тип</label><br>
-                <label><input type="radio" name="axis_ox"> Язык обучения</label><br>
-                <label><input type="radio" name="axis_ox"> Город</label><br>
+                <label><input type="radio" id="ox_country" name="axis_ox">Страна</label><br>
+                <label><input type="radio" id="ox_type" name="axis_ox"> Тип</label><br>
+                <label><input type="radio" id="ox_language" name="axis_ox"> Язык обучения</label><br>
+                <label><input type="radio" id="ox_city" name="axis_ox"> Город</label><br>
             </fieldset>
             <fieldset>
                 <legend><b>Значение по оси OY</b></legend>
-                <label><input type="radio" name="axis_oy"> Количество студентов</label><br>
-                <label><input type="radio" name="axis_oy"> Год основания</label>
+                <label for="oy_max_students"><input type="radio" id="oy_max_students" name="axis_oy"
+                        value="max_students">
+                    Максимальное количество студентов</label><br>
+                <label for="oy_min_students"><input type="radio" id="oy_min_students" name="axis_oy"
+                        value="min_students">
+                    Минимальное количество студентов</label><br>
+                <label for="oy_earliest_year"><input type="radio" id="oy_earliest_year" name="axis_oy"
+                        value="earliest_year"> Самый
+                    ранний год основания</label><br>
+                <label for="oy_latest_year"><input type="radio" id="oy_latest_year" name="axis_oy" value="latest_year">
+                    Самый
+                    поздний год основания</label>
             </fieldset><br><br>
 
         </details>
