@@ -17,12 +17,13 @@
         <details>
             <summary>График</summary>
             <fieldset>
-                <!--DO: добавить id к каждому пункту-->
                 <legend><b>Значение по оси OX</b></legend>
-                <label><input type="radio" id="ox_country" name="axis_ox">Страна</label><br>
-                <label><input type="radio" id="ox_type" name="axis_ox"> Тип</label><br>
-                <label><input type="radio" id="ox_language" name="axis_ox"> Язык обучения</label><br>
-                <label><input type="radio" id="ox_city" name="axis_ox"> Город</label><br>
+                <label for="ox_country"><input type="radio" id="ox_country" name="axis_ox" value="country">
+                    Страна</label><br>
+                <label for="ox_type"><input type="radio" id="ox_type" name="axis_ox" value="type"> Тип</label><br>
+                <label for="ox_language"><input type="radio" id="ox_language" name="axis_ox" value="language"> Язык
+                    обучения</label><br>
+                <label for="ox_city"><input type="radio" id="ox_city" name="axis_ox" value="city"> Город</label><br>
             </fieldset>
             <fieldset>
                 <legend><b>Значение по оси OY</b></legend>
@@ -43,19 +44,31 @@
         </details>
         <details>
             <summary>Фильтр</summary>
-            <p><label>Название: <input type="text" name="name"></label></p>
-            <p><label>Тип: <input type="text" name="type"> </label></p>
-            <p><label>Страна: <input type="text" name="country"> </label></p>
-            <p><label>Город: <input type="text" name="city"></label></p>
-            <p><label>Язык обучения: <input type="text" name="language"></label></p>
-            <p><label>Число студентов: от <input type="number" name="students" min="5000" max="400000">
-                </label><label>до <input type="number" name="students_end" min="5000" max="400000"></label></p>
-            <p><label>Год основания: от <input type="number" name="year_begin" min="1096" max="2026"></label><label>до
-                    <input type="number" name="year_end" min="1096" max="2026"></label></p>
+            <p><label for="filter_name">Название: <input type="text" id="filter_name" name="name"></label></p>
+            <p><label for="filter_type">Тип: <input type="text" id="filter_type" name="type"></label></p>
+            <p><label for="filter_country">Страна: <input type="text" id="filter_country" name="country"></label></p>
+            <p><label for="filter_city">Город: <input type="text" id="filter_city" name="city"></label></p>
+            <p><label for="filter_language">Язык обучения: <input type="text" id="filter_language"
+                        name="language"></label></p>
+            <p>
+                <label for="filter_students_from">Число студентов: от <input type="number" id="filter_students_from"
+                        name="students" min="5000" max="400000"></label>
+                <label for="filter_students_to">до <input type="number" id="filter_students_to" name="students_end"
+                        min="5000" max="400000"></label>
+            </p>
+            <p>
+                <label for="filter_year_from">Год основания: от <input type="number" id="filter_year_from"
+                        name="year_begin" min="1096" max="2026"></label>
+                <label for="filter_year_to">до <input type="number" id="filter_year_to" name="year_end" min="1096"
+                        max="2026"></label>
+            </p>
         </details>
+
         <details>
             <summary>Сортировка</summary>
-            <p><label>Первый уровень: <select name="sort_1">
+            <p>
+                <label for="sort_level_1">Первый уровень:
+                    <select id="sort_level_1" name="sort_1">
                         <option value="0"> Название </option>
                         <option value="1"> Год основания </option>
                         <option value="2"> Город </option>
@@ -64,8 +77,14 @@
                         <option value="5"> Число студентов </option>
                         <option value="6"> Язык обучения </option>
                         <option value="7" selected> Нет </option>
-                    </select> по убыванию? <input type="checkbox" name="desc_sort_1"></label></p>
-            <p><label>Второй уровень: <select name="sort_2">
+                    </select>
+                </label>
+                <label for="sort_desc_1">по убыванию? <input type="checkbox" id="sort_desc_1"
+                        name="desc_sort_1"></label>
+            </p>
+            <p>
+                <label for="sort_level_2">Второй уровень:
+                    <select id="sort_level_2" name="sort_2">
                         <option value="0"> Название </option>
                         <option value="1"> Год основания </option>
                         <option value="2"> Город </option>
@@ -74,8 +93,14 @@
                         <option value="5"> Число студентов </option>
                         <option value="6"> Язык обучения </option>
                         <option value="7" selected> Нет </option>
-                    </select> по убыванию? <input type="checkbox" name="desc_sort_2"></label></p>
-            <p> <label>Третий уровень: <select name="sort_3">
+                    </select>
+                </label>
+                <label for="sort_desc_2">по убыванию? <input type="checkbox" id="sort_desc_2"
+                        name="desc_sort_2"></label>
+            </p>
+            <p>
+                <label for="sort_level_3">Третий уровень:
+                    <select id="sort_level_3" name="sort_3">
                         <option value="0"> Название </option>
                         <option value="1"> Год основания </option>
                         <option value="2"> Город </option>
@@ -84,8 +109,12 @@
                         <option value="5"> Число студентов </option>
                         <option value="6"> Язык обучения </option>
                         <option value="7" selected> Нет </option>
-                    </select> по убыванию? <input type="checkbox" name="desc_sort_3"></label></p>
-            <input type="button" value="Сортировать">
+                    </select>
+                </label>
+                <label for="sort_desc_3">по убыванию? <input type="checkbox" id="sort_desc_3"
+                        name="desc_sort_3"></label>
+            </p>
+            <input type="button" id="btn_sort" value="Сортировать">
         </details>
     </form>
     <br>
