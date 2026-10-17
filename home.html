@@ -9,91 +9,109 @@
 
 <body>
     <div id="bar">
-
-        <a href="./table.html">Список университетов мира</a>
-        <a href="./home.html">Домашняя страница</a>
-
-        <form class="search">
-            <label for="search"><input type="text" id="search" name="search_" placeholder="Поиск"></label>
-        </form>
-        <img src="./picture/search.png" width="20" alt="search icon">
+        <div class="menu">
+            <a href="./home.html" class="active">Домашняя страница</a>
+            <a href="./table.html">Список университетов мира</a>
+        </div>
+        <div class="search-container">
+            <form class="search">
+                <label for="search"><input type="text" id="search" name="search_" placeholder="Поиск"></label>
+            </form>
+            <img src="./picture/search.png" width="20" alt="search icon">
+        </div>
     </div>
+
     <div id="content">
         <div id="gallery">
-            <div class=" item fefu"><a href="./fefu.html"><img src="./picture/fefu.png" alt="ДВФУ главное здание"></a>
+            <div class="gallery-left">
+                <div class="item">
+                    <a href="./fefu.html"><img src="./picture/fefu.png" alt="ДВФУ главное здание"></a>
+                </div>
             </div>
-            <div class="item mit"><img src="./picture/mit.png" alt="MIT главный корпус"></div>
-            <div class="item msu"><img src="./picture/msu.png" alt="МГУ имени Ломоносова главный корпус"></div>
-            <div class="item oxford"> <img src="./picture/oxford.png" alt="Оксфорд главное здание">
+            <div class="gallery-right">
+                <div class="gallery-row">
+                    <div class="item"><img src="./picture/mit.png" alt="MIT главный корпус"></div>
+                </div>
+                <div class="gallery-row">
+                    <div class="item"><img src="./picture/msu.png" alt="МГУ имени Ломоносова главный корпус"></div>
+                </div>
+                <div class="gallery-row">
+                    <div class="item inline-item"><img src="./picture/oxford.png" alt="Оксфорд главное здание"></div>
+                    <div class="item inline-item"><img src="./picture/s_g_l.png" alt="Славяно-греко-латинская академия">
+                    </div>
+                </div>
             </div>
-            <!--TODO: заменить на фотку института из списка-->
-            <div class="item cyan"><img src="./picture/s_g_l.png"></div>
         </div>
+
         <div id="main">
             <div id="left">
-                <div>
-                    <h2>Заголовок</h2>
-                    <img src="./picture/fefu.png">
-                    <p>nndfgnfd</p>
-                    <form><input type="button" value="Подробности"></form>
+                <div class="articl">
+                    <h3 class="card-title">ДВФУ</h3>
+                    <div class="card">
+                        <div class="card-text w50">
+                            <div class="lines lines-big"></div>
+                            <form class="btn-form"><input class="button" type="button" value="Подробнее»"></form>
+                        </div>
+                        <div class="card-img w50">
+                            <img src="./picture/fefu.png" class="img-block img-big" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h2>Заголовок</h2>
-                    <img src="./picture/fefu.png">
-                    <p>nndfgnfd</p>
-                    <form><input type="button" value="Подробности"></form>
+
+                <div class="articl">
+                    <h3 class="card-title">МГУ</h3>
+                    <div class="card">
+                        <div class="card-img w25">
+                            <img src="./picture/msu.png" class="img-block img-small" alt="">
+                        </div>
+                        <div class="card-text w75">
+                            <div class="lines lines-small"></div>
+                            <form class="btn-form left"><input class="button" type="button" value="Подробнее»"></form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="articles">
 
+            <div id="articles">
+                <div class="articl-side">
+                    <div class="side-text">
+                        <div class="side-title">MIT</div>
+                        <div class="lines lines-side"></div>
+                        <form class="btn-form"><input class="button" type="button" value="Подробнее»"></form>
+                    </div>
+                    <div class="side-img"><img class="img-block img-side" src="./picture/mit.png" alt=""></div>
+                </div>
+                <div class="articl-side">
+                    <div class="side-text">
+                        <div class="side-title">Оксфорд</div>
+                        <div class="lines lines-side"></div>
+                        <form class="btn-form"><input class="button" type="button" value="Подробнее»"></form>
+                    </div>
+                    <div class="side-img"><img class="img-block img-side" src="./picture/oxford.png" alt=""></div>
+                </div>
+                <div class="articl-side">
+                    <div class="side-text">
+                        <div class="side-title"></div>
+                        <div class="lines lines-side"></div>
+                        <form class="btn-form"><input class="button" type="button" value="Подробнее»"></form>
+                    </div>
+                    <div class="side-img"><img class="img-block img-side" src="./picture/msu.png" alt=""></div>
+                </div>
+                <div class="articl-side">
+                    <div class="side-text">
+                        <div class="side-title"></div>
+                        <div class="lines lines-side"></div>
+                        <form class="btn-form"><input class="button" type="button" value="Подробнее»"></form>
+                    </div>
+                    <div class="side-img"><img class="img-block img-side" src="./picture/s_g_l.png" alt=""></div>
+                </div>
             </div>
         </div>
-        <br>
-        <h4>История высшего образования в Европе</h4>
-        <p><img src="./picture/bolon.png" width="300" height="360" align="center"
-                alt="Болонские студенты немецкой нации">
-        </p>
-        <p>История высшего образования в Старом Свете (то есть в Европе) берет свое начало еще в
-            1088 году. Интересно то, что первые<br> здания учебного заведения все же известны лишь с XIV века. Но, так
-            или
-            иначе,
-            именно Болонский университет является первым в<br> Европе, и после чего начали появляться другие, в том
-            числе:
-        </p>
-        <ul>
-            <li>Оксфордский университет (основан в 1096 году).</li>
-            <li>Парижский университет (основан в 1208 году).</li>
-            <li>Неапольский университет (основан в 1224 году).</li>
-            <li>Венский университет (основан в 1365 году) и прочие.</li>
-        </ul>
-        <p> Высшее образование в последующих веках развивалось все такими же бурными темпами, а также перемещалось из
-            Европы
-            и
-            на
-            другие<br> материки, например в Америку.</p>
-        <h4>Когда началась история высшего образования в России</h4>
-        <p><img src="./picture/s_g_l.png" width="200" height="280" align="left" hspace="20"
-                alt="Славяно-греко-латинская академия главное здание">
-            В отличие от Европы, история высшего образования на территории Московского царства, а потом<br> Российской
-            империи началась аж в XVII веке. В 1687 году была основана Славяно-греко-латинская<br> академия, которая
-            и открыла ворота к высшему образованию в России.
-            Она была открыта благодаря<br> стараниям Симеона Полоцкого и в ней могли учиться представители не только
-            привилегированного <br>сословия (знать, бояре, дворяне), но и других сословий государства
-            Российского.<br><br>
-            Однако эту академию нельзя считать полноценным Высшим учебным заведением. Первые ВУЗы в<br> России появились
-            лишь в начале XVIII века, в том числе во времена знаменитых Петровских реформ.<br><br>
-            В XIX веке высшее образование в Российской империи продолжало развиваться, открывались новые<br> ВУЗы
-            (Казанский
-            и
-            Харьковский в 1804, а также многие другие), развивались науки и появлялись<br> новые ученые.
-        </p>
-        <br>
-        <br>
     </div>
+
     <footer>
         <p>Гончаров Артём Андреевич Б9124-09.03.04(1)</p>
     </footer>
-
 </body>
 
 </html>
