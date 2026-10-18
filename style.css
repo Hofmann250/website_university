@@ -187,25 +187,6 @@ body {
     height: 180px;
 }
 
-.lines {
-    display: block;
-    background: repeating-linear-gradient(to bottom,
-            transparent 0, transparent 9px,
-            #888 9px, #888 10px);
-}
-
-.lines-big {
-    height: 230px;
-}
-
-.lines-small {
-    height: 150px;
-}
-
-.lines-side {
-    height: 40px;
-}
-
 .btn-form {
     display: block;
     text-align: right;
@@ -255,6 +236,10 @@ body {
 
 .img-side {
     height: 120px;
+}
+
+.font {
+    text-align: justify;
 }
 
 footer {
