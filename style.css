@@ -174,7 +174,6 @@ body {
 }
 
 .img-block {
-    display: block;
     width: 100%;
     object-fit: cover;
 }
@@ -188,13 +187,7 @@ body {
 }
 
 .btn-form {
-    display: block;
-    text-align: right;
     margin: 6px 0 0;
-}
-
-.btn-form.left {
-    text-align: left;
 }
 
 .button {
@@ -209,7 +202,6 @@ body {
 }
 
 .articl-side {
-    display: block;
     margin-bottom: 30px;
     font-size: 0;
 }
@@ -228,7 +220,6 @@ body {
 }
 
 .side-title {
-    display: block;
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 10px;
@@ -243,7 +234,6 @@ body {
 }
 
 footer {
-    display: block;
     text-align: center;
     border-top: 1px solid gray;
 }
