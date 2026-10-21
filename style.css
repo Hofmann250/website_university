@@ -9,7 +9,7 @@ body {
 #bar {
     display: block;
     font-size: 0;
-    background: #333;
+    background: rgb(50, 50, 50);
     white-space: nowrap;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 #left,
-#articles {
+#right {
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
@@ -121,7 +121,7 @@ body {
     padding-right: 20px;
 }
 
-#articles {
+#right {
     width: 33.333%;
     border-left: 1px solid #333;
     padding-left: 10px;
@@ -145,11 +145,11 @@ body {
     font-size: 0;
 }
 
-.card-text,
-.card-img {
+.card-part {
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
+    padding: 0 10px;
 }
 
 .w25 {
@@ -164,25 +164,17 @@ body {
     width: 75%;
 }
 
-.card-text {
-    padding: 0 10px;
-}
-
-.card-img {
-    padding: 0 10px;
-}
-
 .img-block {
     width: 100%;
     object-fit: cover;
 }
 
 .img-big {
-    height: 260px;
+    height: 270px;
 }
 
 .img-small {
-    height: 180px;
+    height: 200px;
 }
 
 .btn-form {
@@ -191,9 +183,8 @@ body {
 
 .button {
     display: inline-block;
-    background: #2196f3;
+    background: rgb(36, 149, 225);
     color: white;
-    font-size: 12px;
     padding: 2px 6px;
     border: 2px solid #000;
     border-radius: 6px;
@@ -204,16 +195,12 @@ body {
     font-size: 0;
 }
 
-.side-text,
-.side-img {
+.side-part {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
     font-size: 14px;
     padding: 0 10px;
-}
-
-.side-text {
     text-align: right;
 }
 
