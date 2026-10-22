@@ -40,13 +40,16 @@
                     Самый
                     поздний год основания</label>
             </fieldset><br><br>
-
+            <input type="button" id="btn_graft" value="Построить">
         </details>
+    </form>
+    <form>
         <details>
             <summary>Фильтр</summary>
             <p><label for="filter_name">Название: <input type="text" id="filter_name" name="name"></label></p>
             <p><label for="filter_type">Тип: <input type="text" id="filter_type" name="type"></label></p>
-            <p><label for="filter_country">Страна: <input type="text" id="filter_country" name="country"></label></p>
+            <p><label for="filter_country">Страна: <input type="text" id="filter_country" name="country"></label>
+            </p>
             <p><label for="filter_city">Город: <input type="text" id="filter_city" name="city"></label></p>
             <p><label for="filter_language">Язык обучения: <input type="text" id="filter_language"
                         name="language"></label></p>
@@ -62,8 +65,10 @@
                 <label for="filter_year_to">до <input type="number" id="filter_year_to" name="year_end" min="1096"
                         max="2026"></label>
             </p>
+            <input type="button" id="btn_fil" value="Фильтровать">
         </details>
-
+    </form>
+    <form>
         <details>
             <summary>Сортировка</summary>
             <p>
@@ -114,7 +119,7 @@
                 <label for="sort_desc_3">по убыванию? <input type="checkbox" id="sort_desc_3"
                         name="desc_sort_3"></label>
             </p>
-            <input type="button" id="btn_sort" value="Сортировать">
+            <input type="button" id="btn_sort" value="Сортировать"><br>
         </details>
     </form>
     <br>
