@@ -74,7 +74,6 @@ body {
 .gallery-row {
     display: block;
     height: 33.333%;
-    font-size: 0;
 }
 
 .item {
@@ -122,8 +121,9 @@ body {
 }
 
 #right {
+    font-size: 0;
     width: 33.333%;
-    border-left: 1px solid #333;
+    border-left: 1px solid rgb(63, 63, 63);
     padding-left: 10px;
 }
 
@@ -177,11 +177,8 @@ body {
     height: 200px;
 }
 
-.btn-form {
-    margin: 6px 0 0;
-}
-
 .button {
+    margin: 6px 0 0;
     display: inline-block;
     background: rgb(36, 149, 225);
     color: white;
@@ -192,7 +189,6 @@ body {
 
 .articl-side {
     margin-bottom: 30px;
-    font-size: 0;
 }
 
 .side-part {
@@ -201,6 +197,10 @@ body {
     width: 50%;
     font-size: 14px;
     padding: 0 10px;
+
+}
+
+.side-text {
     text-align: right;
 }
 
