@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
 #bar {
     font-size: 0;
     background: rgb(50, 50, 50);
@@ -128,6 +124,7 @@ body {
 }
 
 .card-title {
+    font-size: 16px;
     text-align: center;
     margin: 10px 0 20px;
 }
