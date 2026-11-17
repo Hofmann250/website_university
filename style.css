@@ -137,8 +137,8 @@ footer {
 }
 
 .item {
-    /* flex-grow: 0;
-    flex-shrink: 0;*/
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: 25%;
     height: 120px;
 
@@ -149,14 +149,9 @@ footer {
     }
 }
 
-/*.part {
-    flex-grow: 1;
-}*/
-
 .text {
     text-align: justify;
 }
-
 
 .pink {
     background: rgb(221, 127, 157);
