@@ -137,8 +137,8 @@ footer {
 }
 
 .item {
-    /* flex-grow: 0;
-    flex-shrink: 0;*/
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-basis: 25%;
     height: 120px;
 
@@ -148,10 +148,6 @@ footer {
         object-fit: cover;
     }
 }
-
-/*.part {
-    flex-grow: 1;
-}*/
 
 .text {
     text-align: justify;
@@ -171,7 +167,7 @@ footer {
 }
 
 .blue {
-    background: rgba(54, 199, 252, 0.962);
+    background: rgb(54, 199, 252);
 }
 
 .button {
