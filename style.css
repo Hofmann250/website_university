@@ -149,6 +149,11 @@ footer {
     }
 }
 
+.part {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
 .text {
     text-align: justify;
 }
